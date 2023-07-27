@@ -30,7 +30,7 @@ class CustomControllerThree extends ControllerBase {
         $user = $user_name->getDisplayName();
       }
       return [
-        '#markup' => "$shape $term $user",
+        '#markup' => "$shape | $term | $user",
       ];
     }
   }

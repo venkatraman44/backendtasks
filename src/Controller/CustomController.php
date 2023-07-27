@@ -25,7 +25,7 @@ class CustomController extends ControllerBase {
         $userid = $color_tid->get('field_gil')->entity;
         $user = $userid->getDisplayName();
         $build = [
-          '#markup' => "$shape $term $user",
+          '#markup' => "$shape | $term | $user",
         ];
         return $build;
       }
